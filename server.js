@@ -30,7 +30,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174'], // Add all origins you want to allow
+    origin: ['https://reservation-client-iota.vercel.app/', 'https://reservation-admin-seven.vercel.app/'], // Add all origins you want to allow
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Add other methods if needed
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'] // Allow specific headers
